@@ -4,10 +4,10 @@ from torch import nn
 device = "cuda" if torch.cuda.is_available() else "cpu"
 
 # hyperconstants
-learning_rate = .0001
-epochs = 20000
-randomizer_seed = 42
-data_type = torch.float32
+learning_rate = .0001 # learning rate of optimizer
+epochs = 20000  # iterations of training loop
+randomizer_seed = 42 
+data_type = torch.float32 # dtype of tensors
 
 # create train /test sets
 weight = .7
